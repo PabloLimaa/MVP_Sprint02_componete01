@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor01: #031105;
+    --cor02: #F6F6F3;
+    --cor03: #031105;
+    --cor04: rgb(85, 107, 47);
+    --cor05: rgb(127,96,0);
+    --cor06: rgb(126,0,0);
+
+    --font-primaria: 'Krona One' , sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
+/* ########################################### */
+
+/* Page Login e Criar Conta */
+/* Corpo da página */
+
+.campo_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Define a altura para ocupar toda a altura da janela de visualização */
+    margin: 0; /* Remove margens padrão */
+
+    padding: 3% 6% 3% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    background-color: var(--cor01);
+}
+
+.cabecalho_img {
+    width: 100px;
+    height: 100px;
+    margin: 10%;
+}
+
+.titulo_login {
+    font-family: var(--font-secundaria);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cor02);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 2% 0 0 5%;
+    border-bottom: 2px inset var(--cor04);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho_texto {
+    font-family: var(--font-secundaria);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--cor02);
+    padding: 1% 1%;
+}
+
+form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.div__form_criarconta{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input_label {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: var(--cor02);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    color: var(--cor04);
+    border: 0;
+    border-bottom: 2px solid var(--cor02);
+    outline: 0;
+    font-size: 14px;
+    background-color: var(--cor01);
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid var(--cor04);
+}
+
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 14px;
+    color: var(--cor04);
+}
+
+.div__criar_conta{
+    text-align: center;
+    margin: 10%;
+}
+
+.criar_conta {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: var(--cor02);
+    font-size: 17px;
+}
+
+.criar_conta:hover {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: var(--cor02);
+    font-size: 17px;
+}
+
+.div__botao_criarconta {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.botao_criarconta {
+    padding: 10px 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 150px;
+    background-color: var(--cor05);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--cor02);
+    transition: 0.5s;
+    outline: 0;
+    font-family: var(--font-secundaria);
+}
+.botao_criarconta:hover {
+    background-color: var(--cor04);
+    color: var(--cor02);
+}
+
+/* ########################################### */
+
+/* Rodapé da página com os links de redes pessoais */
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Para ocupar toda a largura da página */
+    padding: 10px; /* Espaçamento interno do footer */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    background-color: var(--cor01);
+    font-family: var(--font-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.apresentacao__icones {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5em;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor02);
+    font-size: 14px;
+    padding: 0.1% 1% 0.1% 1%;
+}
+
+.apresentacao__links__navegacao:hover {
+    color: var(--cor02);  
+}
+
+/* ########################################### */
+
+
+

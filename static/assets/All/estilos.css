@@ -1,0 +1,61 @@
+
+:root {
+    --cor01: #a00d0d; /* Defina a variável para a cor desejada (vermelho neste exemplo) */
+    --cor02: #f8f8f8;
+    --cor03: #131212;
+}
+
+body {
+    font-family: 'Bell MT', serif;
+}
+
+/* ################################################################# */
+.cor_fundo_02 {
+    background: var(--cor03);
+}
+
+.texto-menor {
+    font-size: 13px;
+}
+
+.divs-facilidades {
+    width: 325px;
+}
+
+.div-novidades {
+    width: 325px;
+}
+
+.botao-lilas {
+    background-color: var(--cor01);
+}
+
+.verde-limao {
+    color: var(--cor01);
+}
+
+.menu-link {
+    color: var(--cor02);
+}
+
+/* .menu-link:hover,
+.menu-link:active {
+    color: var(--cor01);
+} */
+
+/* ################ serviços ######################## */
+
+/* ################################################################# */
+@media(min-width: 768px) {
+
+    .div-novidades {
+        width: 696px;
+    }
+    
+}
+
+
+
+
+
+

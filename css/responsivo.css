@@ -1,0 +1,235 @@
+/* Espaço para trabalhar a responsividade da página */
+/* Responsividade Celular */
+@media (max-width: 400px) {
+
+    /* Espaço para breve descrição e vídeo */
+
+    .cabecalho__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: center;
+        margin: 10px;
+        gap: 25px;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        gap: 50px;
+    }
+
+    .cabecalho_img_puc {
+        width: 100px;
+        height: 60px;
+        padding: 1% 1%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 2% 4% 2% 4%;
+        gap: 20px;
+    }
+
+    .apresentacao__conteudo {
+        padding: 3% 3% 3% 3%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .apresentacao__conteudo___titulo,
+    .apresentacao__conteudo__texto {
+        width: 90%;
+    }
+
+    .campo_video {
+        width: 350px;
+        height: 250px;
+    }
+
+    .apresentacao__conteudo {
+        padding: 3% 3% 3% 3%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input {
+        width: 87%
+    }
+    .textarea {
+        width: 80%;
+    }
+    
+    .apresentacao__links__navegacao{
+        margin: 0.7em;
+    }
+
+    /* Espaço com os comentários da página */
+
+    table,
+    tr,
+    td {
+        border-bottom: 0.5px solid var(--cor-secundaria);
+        border-collapse: collapse;
+        cursor: pointer;
+        position: relative;
+        padding: 4% 4% 4px 4px;
+        font-size: 14px;
+        font-family: var(--font-secundaria);
+        transition: 0.2s;
+        text-align: justify;
+    }
+
+    table{
+        background-color: white;
+        width: 90%;
+    }
+    
+    
+    table tr:not(:first-child) td:first-child {
+        width: 20%;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    table tr:not(:first-child) td:nth-child(2) {
+        width: 60%;
+        font-size: 12px;
+    }
+    
+    table tr:not(:first-child) td:nth-child(3) {
+        font-size: 25px;
+        width: 10%;
+        color: red;
+        /*content: url('../static/lixo.png');*/   
+    }
+
+}
+/* ################################*/
+
+/* Responsividade tablet*/
+
+@media (min-width: 400px) and (max-width: 1200px) {
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 7%;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .cabecalho_img_puc {
+        width: 100px;
+        height: 60px;
+        padding: 1% 1%;
+    }
+
+    .campo_video {
+        width: 390px;
+        height: 250px;
+    }
+
+    .apresentacao__conteudo {
+        padding: 3% 3% 3% 3%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .apresentacao__conteudo___titulo,
+    .apresentacao__conteudo__texto {
+        width: 95%;
+    }
+
+    .comentarios {
+        padding: 3% 2% 3% 2%;
+        margin: 5% 5% 5% 5%;
+        gap: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 4% 6% 4% 6%;
+    }
+
+    .comentarios {
+        padding: 4% 6% 4% 6%;
+    }
+    
+    .apresentacao__links__navegacao{
+        margin: 0.7em;
+    }
+    
+    .div__scroll__comentarios:hover {
+        background-color: var(--cor-quarta);
+    }
+
+    /* Espaço com os comentários da página */
+    .scroll__comentarios {
+        padding: 3% 6%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 10%;
+        background-color: var(--cor-primaria);
+        box-shadow: inset 0 0 3px 3px var(--cor-quarta);
+        height: 400px;
+        overflow-y: scroll;
+    }
+    
+    table,
+    th,
+    td {
+        border-bottom: 0.5px solid var(--cor-secundaria);
+        border-collapse: collapse;
+        cursor: pointer;
+        position: relative;
+        padding: 4px 7px 4px 7px;
+        font-size: 15px;
+        font-family: var(--font-secundaria);
+        transition: 0.2s;
+        text-align: justify;
+
+    }
+
+    table{
+        background-color: white;
+        width: 95%;
+    }
+    
+    
+    table tr:not(:first-child) td:first-child {
+        width: 20%;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    table tr:not(:first-child) td:nth-child(2) {
+        width: 60%;
+        font-size: 12px;
+    }
+    
+    table tr:not(:first-child) td:nth-child(3) {
+        font-size: 25px;
+        width: 10%;
+        color: red;
+        /*content: url('../static/lixo.png');*/   
+    }
+}

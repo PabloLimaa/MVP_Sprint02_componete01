@@ -1,0 +1,223 @@
+
+:root {
+    --cor01: #a00d0d; /* Defina a variável para a cor desejada (vermelho neste exemplo) */
+    --cor02: #f8f8f8;
+    --cor03: black;
+    --cor04: green;
+    --cor05: #131212;
+    --cor06: #e8e4d6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bell MT', serif;
+}
+
+
+.carrossel-card {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor05);
+}
+
+.text-offwhite{
+    color: var(--cor06);
+}
+
+/* ################################################################# */
+.texto-menor {
+    font-size: 13px;
+}
+
+.divs-facilidades {
+    width: 325px;
+}
+
+.div-novidades {
+    width: 325px;
+}
+
+.botao-lilas {
+    background-color: var(--cor01);
+}
+
+.verde-limao {
+    color: var(--cor01);
+}
+
+.menu-link {
+    color: var(--cor02);
+}
+
+.menu-link:hover,
+.menu-link:active {
+    color: var(--cor01);
+}
+/* ################################################################# */
+
+/* ################ serviços ######################## */
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    border-color: var(--cor03);
+    background-color: var(--cor05);
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+    
+    
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor03);
+    border-radius: 20px 20px 0 20px;
+    border-color: var(--cor03);
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--cor05);
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: var(--cor02);
+}
+
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-color: var(--cor05);
+    background: var(--cor02);
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--cor03);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.descricao{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.botao {
+    border: none;
+    font-size: 16px;
+    color: var(--cor06);
+    padding: 8px 16px;
+    background-color: var(--cor05);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao:hover{
+    background: var(--cor01);
+}
+
+.swiper-navBtn{
+    color: var(--cor03);
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: var(--cor01);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+    color: var(--cor01);
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+/* Define a cor das bolinhas de paginação como vermelha */
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--cor01);
+}
+
+
+
+/* .swiper-pagination-bullet{
+    background-color: var(--cor05);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--cor03);
+} */
+
+@media screen and (max-width: 768px) {
+    
+    .slide-content{
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn{
+        display: none;
+    }
+}
+
+/* ################################################################# */

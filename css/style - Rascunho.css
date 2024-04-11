@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor01: #031105;
+    --cor02: #F6F6F3;
+    --cor03: #031105;
+    --cor04: rgb(85, 107, 47);
+    --cor05: rgb(127,96,0);
+    --cor06: rgb(126,0,0);
+
+    --font-primaria: 'Krona One' , sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
+/* ########################################### */
+
+/* Page Login Cabeçalho da página */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 2% 0 0 5%;
+    border-bottom: 2px inset var(--cor04);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho_img {
+    width: 100px;
+    height: 100px;
+    margin: 10%;
+}
+
+.cabecalho_texto {
+    font-family: var(--font-secundaria);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--cor02);
+    padding: 1% 1%;
+}
+/* ########################################### */
+
+/* Espaço para breve descrição e vídeo */
+
+.apresentacao {
+    background-color: var(--cor04);
+    padding: 3% 6% 3% 6%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    box-shadow: inset 0 0 3px 3px var(--cor02);
+}
+
+.apresentacao__conteudo {
+    padding: 3% 3% 3% 3%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_sobre {
+    padding: 5% 5%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.apresentacao__conteudo___titulo {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.2rem;
+    font-family: var(--font-secundaria);
+    text-align: justify;
+}
+
+/* ########################################### */
+
+/* Espaço para inserir os comentários */
+
+.comentarios {
+    padding: 3% 6% 3% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 30px;
+    background-color: var(--cor01);
+}
+
+.comentarios__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor02);
+}
+
+form {
+    width: 100%;
+    max-width: 450px;
+}
+
+.div__form{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input_label {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: var(--cor02);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    color: var(--cor05);
+    border: 0;
+    border-bottom: 2px solid var(--cor02);
+    outline: 0;
+    font-size: 14px;
+    background-color: var(--cor01);
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid var(--cor05);
+}
+
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 14px;
+    color: var(--cor05);
+}
+.input:focus ~ .comentarios__titulo{
+    color: var(--cor05);
+}
+
+.textarea {
+    width: 95%;
+    height: 70px;
+    padding: 15px;
+    color: var(--cor05);
+    border-radius: 10px;
+    border: 0.1px solid var(--cor02);
+    border-bottom: 2px solid var(--cor02);
+    outline: 0;
+    font-size: 14px;
+    background-color: var(--cor01);
+}
+
+.textarea:focus{
+    border-bottom: 2px solid var(--cor05);
+}
+
+.textarea:focus .comentarios__titulo{
+    color: var(--cor05);
+}
+
+.div__botao {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+}
+
+.botao_comentario {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: var(--cor04);
+    border: 1px solid var(--cor04);
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--cor02);
+    transition: 0.5s;
+    outline: 0;
+    font-family: var(--font-secundaria);
+}
+.botao_comentario:hover {
+    background-color: var(--cor06);
+    color: var(--cor05);
+}
+
+/* ########################################### */
+
+/* Espaço com os comentários da página */
+.scroll__comentarios {
+    padding: 3% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 30%;
+    background-color: var(--cor01);
+    box-shadow: inset 0 0 3px 3px var(--cor04);
+    height: 400px;
+    overflow-y: scroll;
+}
+
+table,
+th,
+td {
+    border-bottom: 0.5px solid var(--cor02);
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 14px;
+    font-family: var(--font-secundaria);
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: white;
+    width: 60%;
+}
+
+
+table tr:not(:first-child) td:first-child {
+    width: 10%;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table tr:not(:first-child) td:nth-child(2) {
+    width: 45%;
+    font-size: 13px;
+}
+
+table tr:not(:first-child) td:nth-child(3) {
+    font-size: 25px;
+    width: 5%;
+    color: red;
+    /*content: url('../static/lixo.png');*/   
+}
+
+/* ########################################### */
+
+/* Rodapé da página com os links de redes pessoais */
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    background-color: var(--cor01);
+    font-family: var(--font-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.apresentacao__icones {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor02);
+    font-size: 14px;
+    padding: 0.1% 1% 0.1% 1%;
+}
+
+.apresentacao__links__navegacao:hover {
+    color: var(--cor03);
+}
+
+
+
+/* ########################################### */
+
+
+
