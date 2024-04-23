@@ -2,7 +2,7 @@
 Este projeto é uma aplicação desenvolvida como parte do material didático da disciplina Desenvolvimento Full Stack oferecida pela PUC-Rio. O sistema foi criado para demonstrar e aplicar conceitos fundamentais de desenvolvimento front-end adquiridos durante o curso.
 
 ## Objetivo
-O sistema permite aos usuários agendar serviços em uma barbearia, escolhendo datas, horários, tipo de corte, e barbeiros específicos. O foco está na interatividade do cliente com a aplicação, proporcionando ganho de produtividade para o estabelecimento uma experiência fluida e dinâmica por parte dos usuários.
+O sistema permite aos usuários agendar serviços em uma barbearia, escolhendo datas, horários, tipo de corte, e barbeiros específicos. O foco está na interatividade do cliente com a aplicação, proporcionando ganho de produtividade para o estabelecimento e uma experiência fluida e dinâmica por parte dos usuários.
 
 
 ## Tecnologias Utilizadas
