@@ -15,11 +15,12 @@
     <!--Meio do corpo do projeto -->
     <main>
         <!--Seção para fazer login -->
-        <section class="newItem campo_login">
+        <section class="campo_login">
             <img class="cabecalho_img" src="./static/logo_marca.png" alt="Logo da PUC-Rio">
             <h2 class="titulo_login">Login</h2>
             <form id="formulario" name="formulario" action="/criar" method="post">
                 <div class="div__form_login">
+                    <p id="erro_senha" style="color: rgb(126,0,0); display: none;">Por favor, verifique seu e-mail e senha.</p>
                     <input required class="input" type="text" name="email" id="email">
                     <label class="input_label" for="email">E-mail</label>
                 </div>
@@ -27,7 +28,6 @@
                 <div class="div__form_login">
                     <input required class="input" type="password" name="senha" id="senha">
                     <label class="input_label" for="senha">Senha</label>
-                    <p id="erro_senha" style="color: rgb(126,0,0); display: none;">Por favor, verifique seu e-mail e senha.</p>
                 </div>
                 
                 <div class="div__criar_conta_login">

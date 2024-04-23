@@ -89,7 +89,7 @@ form {
 }
 
 .input_label {
-    font-size: 16px;
+    font-size: 12px;
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -105,7 +105,7 @@ form {
     border: 0;
     border-bottom: 2px solid var(--cor02);
     outline: 0;
-    font-size: 14px;
+    font-size: 12px;
     background-color: var(--cor01);
 }
 
@@ -117,7 +117,7 @@ form {
 .input:focus ~ label,
 .input:valid ~ label{
     transform: translateY(-24px);
-    font-size: 14px;
+    font-size: 12px;
     color: var(--cor04);
 }
 
@@ -129,13 +129,13 @@ form {
 .criar_conta_login {
     text-decoration: none; /* Remover sublinhado padrão */
     color: var(--cor02);
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .criar_conta_login:hover {
     text-decoration: none; /* Remover sublinhado padrão */
     color: var(--cor02);
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .div__botao_login {
@@ -146,15 +146,13 @@ form {
 
 .botao_entrar_login {
     padding: 10px 10px;
-    padding-left: 15px;
-    font-size: 14px;
-    width: 130px;
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
     background-color: var(--cor05);
     border-radius: 10px;
-    cursor: pointer;
     color: var(--cor02);
     transition: 0.5s;
-    outline: 0;
     font-family: var(--font-secundaria);
 }
 .botao_entrar_login:hover {
@@ -181,12 +179,12 @@ form {
     background-color: var(--cor01);
     font-family: var(--font-secundaria);
     font-size: 1rem;
-    font-weight: 400;
+    
 }
 
 .apresentacao__icones {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin-right: 0.5em;
 }
 
@@ -196,7 +194,7 @@ form {
     align-items: center;
     text-decoration: none;
     color: var(--cor02);
-    font-size: 14px;
+    font-size: 10px;
     padding: 0.1% 1% 0.1% 1%;
 }
 

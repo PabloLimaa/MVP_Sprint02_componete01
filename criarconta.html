@@ -14,7 +14,7 @@
     <!--Meio do corpo do projeto -->
     <main>
         <!--Seção para criar uma conta  -->
-        <section class="newItem campo_login">
+        <section class="campo_login">
             <img class="cabecalho_img" src="./static/logo_marca.png" alt="Logo da PUC-Rio">
             <h2 class="titulo_login">Criar Conta</h2>
             <form id="formulario" name="formulario" action="/criar" method="post">
@@ -31,9 +31,9 @@
                     <label class="input_label" for="senha">Senha</label>
                 </div>
                 <div class="div__form_criarconta">
+                    <p id="erro_senha" style="color: rgb(126,0,0); display: none;">As senhas não coincidem.</p>
                     <input required class="input" type="password" name="confirmar_senha" id="confirmar_senha">
                     <label class="input_label" for="confirmar_senha">Confirmar Senha</label>
-                    <p id="erro_senha" style="color: rgb(126,0,0); display: none;">As senhas não coincidem.</p>
                 </div>
                 <div class="div__criar_conta">
                     <a class="criar_conta" href="index.html">Voltar</a>

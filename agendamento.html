@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./static/assets/All/logo_marca.png" type="image/x-icon">
+  <title>CutCulture</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./static/assets/Arcs_servicos/style_serv.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style - agendamento.css">
+  <style>
+    /* Custom CSS styles */
+  </style>
+</head>
+
+<body class="bg-black text-bg-dark">
+
+  <div class="container mt-5">
+    <h1 class="text-center texto_titulos mb-4">Agendar Corte</h1>
+    
+    <!-- Carrossel de barbeiros -->
+    <div id="barbersCarousel" class="carousel slide mb-4">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./static/barbeiro.png" data-nome="Armando Costa" class="d-block w-100" alt="Barbeiro 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./static/barbeiro.png" data-nome="Paulo Silva" class="d-block w-100" alt="Barbeiro 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./static/barbeiro.png" data-nome="Leonanrdo Ramos" class="d-block w-100" alt="Barbeiro 3">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#barbersCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#barbersCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+    
+    <!-- Seleção de Data e Horário -->
+    <div class="row">
+      <div class="col-md-6">
+        <label class="input_label" for="data_corte">Escolha a Data:</label>
+        <input type="date" id="data_corte" nome="data_corte" class="form-control input mb-3">
+      </div>
+      <div class="col-md-6">
+        <label for="horario_corte">Escolha o Horário:</label>
+        <select id="horario_corte" nome="horario_corte" class="form-control mb-3">
+          <!-- Horários gerados dinamicamente por JavaScript -->
+        </select>
+      </div>
+    </div>
+    
+    <!-- Seleção do Tipo de Corte -->
+    <div class="form-group">
+      <label for="tipo_corte">Escolha o Tipo de Corte:</label>
+      <select id="tipo_corte" nome="tipo_corte" class="form-control">
+        <option value="0">Corte Máquina</option>
+        <option value="1">Corte Tesoura</option>
+        <option value="2">Barba</option>
+        <option value="3">Corte e Barba</option>
+        <!-- Adicione mais opções conforme necessário -->
+      </select>
+    </div>
+    <!-- Adicione esta seção abaixo da seleção do tipo de corte -->
+    <div class="form-group">
+      <label for="valor_corte">Valor do Serviço:</label>
+      <input type="text" id="valor_corte" nome="valor_corte" class="form-control valor" style="background-color: #031105; color: rgb(126,0,0); border: none;" readonly>
+    </div>
+
+    <!-- Botão de Agendamento -->
+    <button id="submitBtn" onclick="criarAgendamento()" class="btn btn-outline-light btn-block">Agendar Corte</button>
+    <div class="div__voltar">
+      <a class="voltar" href="home.html">Voltar</a>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--adicionando o javascript na página -->
+  <script src="script.js"></script>
+    
+</body>
+
+</html>

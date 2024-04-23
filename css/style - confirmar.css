@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor01: #031105;
+    --cor02: #F6F6F3;
+    --cor03: #031105;
+    --cor04: rgb(85, 107, 47);
+    --cor05: rgb(127,96,0);
+    --cor06: rgb(126,0,0);
+
+    --font-primaria: 'Krona One' , sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* ########################################### */
+
+/* Page Home */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--cor01);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    text-align: center;
+    color: var(--cor02);
+}
+
+.agendamento-info {
+    margin-top: 30px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item strong {
+    font-weight: bold;
+}
+
+.botoes {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn.editar-btn {
+    background-color: var(--cor05);
+    color: #fff;
+}
+
+.btn.excluir-btn {
+    background-color: var(--cor06);
+    color: var(--cor02);
+}
+
+.btn.concluir-btn {
+    background-color: var(--cor04);
+    color: var(--cor02);
+}
+
+.div__voltar {
+    text-align: center;
+    margin: 5%;
+}
+
+.voltar {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: var(--cor02);
+    font-size: 17px;
+}
+
+.voltar:hover {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: var(--cor02);
+    font-size: 17px;
+}
+
+
+

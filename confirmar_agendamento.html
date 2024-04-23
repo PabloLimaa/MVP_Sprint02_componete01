@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Agendamento</title>
+    <link rel="stylesheet" href="./css/style - confirmar.css">
+</head>
+<body class="bg-black text-bg-dark">
+
+  <div class="container">
+    <h1 class="titulo">Resultado do Agendamento</h1>
+    
+    <div class="agendamento-info">
+        <div class="info-item">
+          <strong>Barbeiro:</strong> <span id="barbeiroAgendamento"></span>
+        </div>
+        <div class="info-item">
+            <strong>Data:</strong> <span id="dataAgendamento"></span>
+        </div>
+        <div class="info-item">
+            <strong>Horário:</strong> <span id="horarioAgendamento"></span>
+        </div>
+        <div class="info-item">
+            <strong>Tipo de Corte:</strong> <span id="tipoCorte"></span>
+        </div>
+        <div class="info-item">
+            <strong>Valor:</strong> <span id="valorServico"></span>
+        </div>
+    </div>
+
+    <div class="botoes">
+        <button class="btn editar-btn" onclick="window.history.back()">Editar</button>
+        <button class="btn excluir-btn" onclick="excluirAgendamento()">Excluir</button>
+        <button class="btn concluir-btn" onclick="concluirAgendamento()">concluir</button>
+        <div class="div__voltar">
+            <a class="voltar" href="home.html">Voltar</a>
+        </div>
+        <!-- Elemento para mostrar a mensagem -->
+        <div id="mensagemStatus" style="margin-top: 20px;"></div> 
+    </div>
+  </div>
+
+  <script>
+    // Recupera os dados do agendamento do localStorage
+    var agendamento = JSON.parse(localStorage.getItem('agendamento'));
+
+    // Verifica se há dados de agendamento armazenados
+    if (agendamento) {
+      // Atualiza os campos HTML com os valores do agendamento
+      document.getElementById('barbeiroAgendamento').innerText = agendamento.barbeiro_corte;
+      document.getElementById('dataAgendamento').innerText = agendamento.data_corte;
+      document.getElementById('horarioAgendamento').innerText = agendamento.horario_corte;
+      document.getElementById('tipoCorte').innerText = agendamento.tipo_corte;
+      document.getElementById('valorServico').innerText = agendamento.valor_corte;
+    } else {
+      // Caso não haja dados de agendamento armazenados
+      console.log("Não há dados de agendamento armazenados.");
+    }
+  </script>
+<!--adicionando o javascript na página -->
+<script src="script.js"></script>
+</body>
+</html>

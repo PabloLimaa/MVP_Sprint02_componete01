@@ -1,7 +1,13 @@
-## Single Page Aplication (Front-End)
-Este projeto faz parte do material didático da disciplina Desenvolvimento Full Stack Básico (Puc-Rio).
+## Sistema de Agendamento de Cortes para Barbearia
+Este projeto é uma aplicação desenvolvida como parte do material didático da disciplina Desenvolvimento Full Stack Básico oferecida pela PUC-Rio. O sistema foi criado para demonstrar e aplicar conceitos fundamentais de desenvolvimento front-end adquiridos durante o curso.
 
-O objetivo principal deste repositório é materializar o que foi lecionado durante a primeira sprint com assuntos relacionado ao desenvolvimento front-end.
+## Objetivo
+O sistema permite aos usuários agendar serviços em uma barbearia, escolhendo datas, horários, tipo de corte, e barbeiros específicos. O foco está na interatividade do usuário com a aplicação, sem necessidade de recarregamento da página, proporcionando uma experiência fluida e dinâmica.
+
+
+## Tecnologias Utilizadas
+Este projeto utiliza HTML, CSS, e JavaScript para criar um sistema eficiente e responsiva. O sistema é totalmente executado no lado do cliente, utilizando localStorage para simular o armazenamento de dados.
+
 
 ## Como Executar
 Para executar este projeto localmente, siga as instruções abaixo:
@@ -12,7 +18,7 @@ Para executar este projeto localmente, siga as instruções abaixo:
 git clone https://github.com/seu-usuario/seu-projeto.git
 ```
 
-2° Navegue até o diretório do projeto:
+2° Navegue até o diretório do projeto, acesse o diretório onde o projeto foi clonado:
 
 ```bash
 cd seu-projeto
@@ -24,12 +30,13 @@ cd seu-projeto
 open index.html
 ```
 
-Isso abrirá o projeto no seu navegador padrão.
+Isso abrirá o projeto em seu navegador padrão, onde você poderá testar todas as funcionalidades do sistema de agendamento.
 
 ## Contato
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
+Se você tiver alguma dúvida, feedback ou sugestão, não hesite em entrar em contato comigo:
 
 Nome: Pablo Henrique Costa de Lima  
 E-mail: pablo.henriquelima07@gmail.com  
 LinkedIn: https://www.linkedin.com/in/pablo-henrique-lima-542300164/    
+
 Agradeço pela sua visita!
