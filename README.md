@@ -1,12 +1,12 @@
 ## Sistema de Agendamento de Cortes para Barbearia
-Este projeto é uma aplicação desenvolvida como parte do material didático da disciplina Desenvolvimento Full Stack oferecida pela PUC-Rio. O sistema foi criado para demonstrar e aplicar conceitos fundamentais de desenvolvimento front-end adquiridos durante o curso.
+Este projeto é uma aplicação desenvolvida como parte do material didático da disciplina Desenvolvimento Full Stack Básico oferecida pela PUC-Rio. O sistema foi criado para demonstrar e aplicar conceitos fundamentais de desenvolvimento front-end adquiridos durante o curso.
 
 ## Objetivo
-O sistema permite aos usuários agendar serviços em uma barbearia, escolhendo datas, horários, tipo de corte, e barbeiros específicos. O foco está na interatividade do cliente com a aplicação, proporcionando ganho de produtividade para o estabelecimento e uma experiência fluida e dinâmica por parte dos usuários.
+O sistema permite aos usuários agendar serviços em uma barbearia, escolhendo datas, horários, tipo de corte, e barbeiros específicos. O foco está na interatividade do usuário com a aplicação, sem necessidade de recarregamento da página, proporcionando uma experiência fluida e dinâmica.
 
 
 ## Tecnologias Utilizadas
-Este projeto utiliza HTML, CSS, e JavaScript para criar um sistema eficiente e responsivo. O sistema é totalmente executado no lado do cliente, utilizando localStorage para simular o armazenamento de dados.
+Este projeto utiliza HTML, CSS, e JavaScript para criar um sistema eficiente e responsiva. O sistema é totalmente executado no lado do cliente, utilizando localStorage para simular o armazenamento de dados.
 
 
 ## Como Executar
