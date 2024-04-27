@@ -4,6 +4,12 @@ Este projeto é uma aplicação desenvolvida como parte do material didático da
 ## Objetivo
 O sistema permite aos usuários agendar serviços em uma barbearia, escolhendo datas, horários, tipo de corte, e barbeiros específicos. O foco está na interatividade do usuário com a aplicação, sem necessidade de recarregamento da página, proporcionando uma experiência fluida e dinâmica.
 
+## Sobre a API externa - Utilizando a API OpenWeather
+A API OpenWeather oferece acesso a uma vasta gama de dados meteorológicos, incluindo previsões do tempo, dados históricos e informações em tempo real. Essa API é ideal para projetos que necessitam de integração de dados meteorológicos precisos e atualizados.
+##Configuração Inicial
+Obter a chave da API: Para utilizar a API OpenWeather, primeiro é necessário criar uma conta no site [OpenWeather](https://openweathermap.org/) e gerar uma chave API gratuita ou paga, dependendo do volume de acessos e dos dados necessários.
+Configurar o ambiente de desenvolvimento: Adicione a chave da API ao seu projeto. Recomenda-se armazenar esta chave em variáveis de ambiente ou em um arquivo de configuração seguro para proteger suas credenciais.
+Nesse projeto armazenamos a chave da seguinte forma: const apiKey = "insira aqui sua chave"; (essa variável está dentro da pasta API_Externa_Weather, no inicio do arquivo js script).
 
 ## Tecnologias Utilizadas
 Este projeto utiliza HTML, CSS, e JavaScript para criar um sistema eficiente e responsiva. O sistema é totalmente executado no lado do cliente, utilizando localStorage para simular o armazenamento de dados.
